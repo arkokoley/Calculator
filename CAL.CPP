@@ -404,9 +404,7 @@ void	structure()
 
 	}
 /*********************************************************/
-/*                                                       */
-/*			Main starts			 */
-/*                                                       */
+/*					Main starts							 */
 /*********************************************************/
 void main()
 {
@@ -937,16 +935,9 @@ break;
       exit(0);
 
  }
-
-
-
-
-
-/*************************************************************/
-/*							     */
-/*          This function gets the user's Input		     */
-/*							     */
-/*************************************************************/
+/************************************************************/
+/*			This function gets the user's Input				*/
+/************************************************************/
 
 char input()
 	  {
@@ -963,633 +954,626 @@ char input()
 	  }
 	  do
 	  {
-	  mouse();
-	  if (X>=350 && X<=380 && Y>=205 && Y<=225) // Condition For 7
-	  {
-	  hide_mouse();
-	  button_3d(350,205,380,225,CLICKED,"7",0);
-	  show_mouse();
-	  delay(250);
-	  hide_mouse();
-	  button_3d(350,205,380,225,UNCLICKED,"7",0);
-	  show_mouse();
-	  ch='7';
-	  return ch;
-	  }
+		  mouse();
+		  if (X>=350 && X<=380 && Y>=205 && Y<=225) // Condition For 7
+		  {
+		  hide_mouse();
+		  button_3d(350,205,380,225,CLICKED,"7",0);
+		  show_mouse();
+		  delay(250);
+		  hide_mouse();
+		  button_3d(350,205,380,225,UNCLICKED,"7",0);
+		  show_mouse();
+		  ch='7';
+		  return ch;
+		  }
 
 
-	//**********************************************
+		//**********************************************
 
-	 if (X>=390 && X<=420 && Y>=205 && Y<=225) // Condition For 8
-	 {
+		 if (X>=390 && X<=420 && Y>=205 && Y<=225) // Condition For 8
+		 {
 
-	 hide_mouse();
-	 button_3d(390,205,420,225,CLICKED,"8",0);
-	 show_mouse();
-	 delay(250);
-	 hide_mouse();
-	 button_3d(390,205,420,225,UNCLICKED,"8",0);
-	 show_mouse();
-	 ch='8';
-	 return ch;
-	 }
-
-
-	//*****************************************
-
-	 if (X>=430 && X<=460 && Y>=205 && Y<=225) // Condition For 9
-	 {
-	 hide_mouse();
-	 button_3d(430,205,460,225,CLICKED,"9",0);
-	 show_mouse();
-	 delay(250);
-	 hide_mouse();
-	 button_3d(430,205,460,225,UNCLICKED,"9",0);
-	 show_mouse();
-	 ch='9';
-	 return ch;
-	 }
+		 hide_mouse();
+		 button_3d(390,205,420,225,CLICKED,"8",0);
+		 show_mouse();
+		 delay(250);
+		 hide_mouse();
+		 button_3d(390,205,420,225,UNCLICKED,"8",0);
+		 show_mouse();
+		 ch='8';
+		 return ch;
+		 }
 
 
-	//***********************************
+		//*****************************************
 
-	 if (X>=350 && X<=380 && Y>=230 && Y<=250) // Condition For 4
-	 {
-	 hide_mouse();
-	 button_3d(350,230,380,250,CLICKED,"4",0);
-	 show_mouse();
-	 delay(250);
-	 hide_mouse();
-	 button_3d(350,230,380,250,UNCLICKED,"4",0);
-	 show_mouse();
-	 ch='4';
-	 return ch;
-	 }
-
-
-	//***********************************
-
-	if (X>=390 && X<=420 && Y>=230 && Y<=250) // Condition For 5
-	{
-	hide_mouse();
-	button_3d(390,230,420,250,CLICKED,"5",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(390,230,420,250,UNCLICKED,"5",0);
-	show_mouse();
-	ch='5';
-	return ch;
-	}
+		 if (X>=430 && X<=460 && Y>=205 && Y<=225) // Condition For 9
+		 {
+		 hide_mouse();
+		 button_3d(430,205,460,225,CLICKED,"9",0);
+		 show_mouse();
+		 delay(250);
+		 hide_mouse();
+		 button_3d(430,205,460,225,UNCLICKED,"9",0);
+		 show_mouse();
+		 ch='9';
+		 return ch;
+		 }
 
 
-	//***********************************
+		//***********************************
 
-	if (X>=430 && X<=460 && Y>=230 && Y<=250) // Condition For 6
-	{
-	hide_mouse();
-	button_3d(430,230,460,250,CLICKED,"6",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(430,230,460,250,UNCLICKED,"6",0);
-	show_mouse();
-	ch='6';
-	return ch;
-	}
-
-
-	//***********************************
-
-	if (X>=480 && X<=510 && Y>=230 && Y<=250) // Condition For *
-	{
-	hide_mouse();
-	button_3d(480,230,510,250,CLICKED,"*",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(480,230,510,250,UNCLICKED,"*",0);
-	show_mouse();
-	ch='*';
-	return ch;
-	}
-       //***********************************
-
-	if (X>=515 && X<=545 && Y>=230 && Y<=250) // Condition For /
-	{
-	hide_mouse();
-	button_3d(515,230,545,250,CLICKED,"/",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(515,230,545,250,UNCLICKED,"/",0);
-	show_mouse();
-	ch='/';
-	return ch;
-	}
-
-	//***********************************
-	int  a,b;
-	if (X>=350 && X<=380 && Y>=255 && Y<=275) // Condition For 1
-	{
-	hide_mouse();
-	button_3d(350,255,380,275,CLICKED,"1",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(350,255,380,275,UNCLICKED,"1",0);
-	show_mouse();
-	ch='1';
-	return ch;
-	}
-
-	   // *************************************
-
-	if (X>=390 && X<=420 && Y>=255 && Y<=275) // Condition For 2
-	{
-	hide_mouse();
-	button_3d(390,255,420,275,CLICKED,"2",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(390,255,420,275,UNCLICKED,"2",0);
-	show_mouse();
-	ch='2';
-	return ch;
-	}
-
-	   // *************************************
-
-	if (X>=430 && X<=460 && Y>=255 && Y<=275) // Condition For 3
-	{
-	hide_mouse();
-	button_3d(430,255,460,275,CLICKED,"3",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(430,255,460,275,UNCLICKED,"3",0);
-	show_mouse();
-	ch='3';
-	return ch;
-	}
-
-	   // *************************************
-
-	if (X>=350 && X<=380 && Y>=280 && Y<=300) // Condition For 0
-	{
-	hide_mouse();
-	button_3d(350,280,380,300,CLICKED,"0",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(350,280,380,300,UNCLICKED,"0",0);
-	show_mouse();
-	ch='0';
-	return ch;
-	}
-
-	   // *************************************
-
-	if (X>=390 && X<=420 && Y>=280 && Y<=300) // Condition For .
-	{
-	hide_mouse();
-	button_3d(390,280,420,300,CLICKED,".",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(390,280,420,300,UNCLICKED,".",0);
-	show_mouse();
-	ch='.';
-	return ch;
-	}
-
-	//**********************************************
-
-	if (X>=430 && X<=460 && Y>=280 && Y<=300) // Condition For pi
-	{
-	hide_mouse();
-	button_3d(430,280,460,300,CLICKED,"pi",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(430,280,460,300,UNCLICKED,"pi",0);
-	show_mouse();
-	ch='h';
-	return ch;
-	}
-
-	 //***********************************************
-
-	if (X>=480 && X<=510 && Y>=255 && Y<=275) // Condition For -
-	{
-	hide_mouse();
-	button_3d(480,255,510,275,CLICKED,"-",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(480,255,510,275,UNCLICKED,"-",0);
-	show_mouse();
-	ch='-';
-	return ch;
-	}
-
-	//**************************************************
-
-	if (X>=515 && X<=545 && Y>=255 && Y<=275) // Condition For +
-	{
-	hide_mouse();
-	button_3d(515,255,545,275,CLICKED,"+",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(515,255,545,275,UNCLICKED,"+",0);
-	show_mouse();
-	ch='+';
-	return ch;
-	}
-
-	//*****************************************************
-
-	if (X>=350 && X<=460 && Y>=305 && Y<=325) // Condition For =
-	{
-	hide_mouse();
-	button_3d(350,305,460,325,CLICKED,"=",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(350,305,460,325,UNCLICKED,"=",0);
-	show_mouse();
-	ch='=';
-	return ch;
-	}
-
-	//*****************************************************
-
-	if (X>=480 && X<=545 && Y>=305 && Y<=325) // Condition For shift
-	{
-	hide_mouse();
-	button_3d(480,305,545,325,CLICKED,"shift",BLUE);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(480,305,545,325,UNCLICKED,"shift",BLUE);
-	show_mouse();
-	ch='~';
-	sflag=1;
-	return ch;
-	}
+		 if (X>=350 && X<=380 && Y>=230 && Y<=250) // Condition For 4
+		 {
+		 hide_mouse();
+		 button_3d(350,230,380,250,CLICKED,"4",0);
+		 show_mouse();
+		 delay(250);
+		 hide_mouse();
+		 button_3d(350,230,380,250,UNCLICKED,"4",0);
+		 show_mouse();
+		 ch='4';
+		 return ch;
+		 }
 
 
-	//*************************************
+		//***********************************
 
-	if (X>=480 && X<=510 && Y>=205 && Y<=225) // Condition For AC
-	{
-	hide_mouse();
-	button_3d(480,205,510,225,CLICKED,"AC",4);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(480,205,510,225,UNCLICKED,"AC",4);
-	show_mouse();
-	ch='o';
-	return ch;
-	}
-	/********************C*/
-	if (X>=515 && X<=545 && Y>=205 && Y<=225) // Condition For C
-	{
-	hide_mouse();
-	button_3d(515,205,545,225,CLICKED,"CE",4);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(515,205,545,225,UNCLICKED,"CE",4);
-	show_mouse();
-	ch='a';
-	return ch;
-	}
-
-	  // ****************************************
-
-	if (X>=100 && X<=150 && Y>=205 && Y<=230) // Condition For Sin
-	{
-	hide_mouse();
-	button_3d(100,205,150,230,CLICKED,"Sin",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(100,205,150,230,UNCLICKED,"Sin",0);
-	show_mouse();
-	ch='s';
-	return ch;
-	}
-
-	//***********************************
-
-	if (X>=160 && X<=210 && Y>=205 && Y<=230) // Condition For Cos
-	{
-	hide_mouse();
-	button_3d(160,205,210,230,CLICKED,"Cos",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(160,205,210,230,UNCLICKED,"Cos",0);
-	show_mouse();
-	ch='c';
-	return ch;
-	}
-
-	 //***********************************
-
-	if(X>=515&&X<=545&&Y>=280&&Y<=300)     //inverse
-	 {
-	hide_mouse();
-	button_3d(515,280,545,300,CLICKED,"inv",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(515,280,545,300,UNCLICKED,"inv",0);
-	show_mouse();
-	ch='m';
-	return ch;
-	}
-
-
-	if (X>=220 && X<=270 && Y>=205 && Y<=230) // Condition For Tan
-	{
-	hide_mouse();
-	button_3d(220,205,270,230,CLICKED,"Tan",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(220,205,270,230,UNCLICKED,"Tan",0);
-	show_mouse();
-	ch='t';
-	return ch;
-	}
-
-	//***********************************  */
-
-
-	if (X>=100 && X<=150 && Y>=250 && Y<=275) // Condition For sin^-1
-	{
-	hide_mouse();
-	button_3d(100,250,150,275,CLICKED,"sin^-1",0);
-	show_mouse();
-	delay(150);
-	hide_mouse();
-	button_3d(100,250,150,275,UNCLICKED,"sin^-1",0);
-	show_mouse();
-	ch='i';
-	return ch;
-	}
-		    //**************************
-
-	if (X>=160 && X<=210 && Y>=250 && Y<=275) // Condition For cos^-1
-	{
-	hide_mouse();
-	button_3d(160,250,210,275,CLICKED,"cos^-1",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(160,250,210,275,UNCLICKED,"cos^-1",0);
-	show_mouse();
-	ch='j';
-	return ch;
-	}
-		    //**************************
-
-	if (X>=430 && X<=460 && Y>=350 && Y<=370) // Condition For MR
-	{
-	hide_mouse();
-	button_3d(430,350,460,370,CLICKED,"MR",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(430,350,460,370,UNCLICKED,"MR",0);
-	show_mouse();
-	ch='?';
-	return ch;
-	}
-	if (X>=390 && X<=420 && Y>=350 && Y<=370) // Condition For M-
-	{
-	hide_mouse();
-	button_3d(390,350,420,370,CLICKED,"M-",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(390,350,420,370,UNCLICKED,"M-",0);
-	show_mouse();
-	ch='<';
-	return ch;
-	}
-	if (X>=350 && X<=380 && Y>=350 && Y<=370) // Condition For M+
-	{
-	hide_mouse();
-	button_3d(350,350,380,370,CLICKED,"M+",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(350,350,380,370,UNCLICKED,"M+",0);
-	show_mouse();
-	ch='>';
-	return ch;
-	}
-
-	if (X>=220 && X<=270 && Y>=250 && Y<=275) // Condition For tan^-1
-	{
-	hide_mouse();
-	button_3d(220,250,270,275,CLICKED,"tan^-1",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(220,250,270,275,UNCLICKED,"tan^-1",0);
-	show_mouse();
-	ch='k';
-	return ch;
-	}
-		    //**************************
-
-
-	if (X>=100 && X<=150 && Y>=300 && Y<=325) // Condition For ln
-	{
-	hide_mouse();
-	button_3d(100,300,150,325,CLICKED,"ln",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(100,300,150,325,UNCLICKED,"ln",0);
-	show_mouse();
-	ch='n';
-	return ch;
-	}
-		    //**************************
-
-	if (X>=160 && X<=210 && Y>=300 && Y<=325) // Condition For log
-	{
-	hide_mouse();
-	button_3d(160,300,210,325,CLICKED,"log",0);
-	show_mouse();
-	delay(150);
-	hide_mouse();
-	button_3d(160,300,210,325,UNCLICKED,"log",0);
-	show_mouse();
-	ch='l';
-	return ch;
-	}
-		    //**************************
-
-	if (X>=220 && X<=270 && Y>=300 && Y<=325) // Condition For X^2
-	{
-	hide_mouse();
-	button_3d(220,300,270,325,CLICKED,"x^2",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(220,300,270,325,UNCLICKED,"x^2",0);
-	show_mouse();
-	ch='p';
-	return ch;
-	}
-	if (X>=100 && X<=150 && Y>=350 && Y<=370) // Condition For deg
-	{
-	hide_mouse();
-	button_3d(100,350,150,370,CLICKED,"deg",15);
-	button_3d(160,350,210,370,UNCLICKED,"rad",0);
-	button_3d(220,350,270,370,UNCLICKED,"gra",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(100,350,150,370,UNCLICKED,"deg",15);
-	show_mouse();
-	ch='d';
-	flagp=flag;
-	flag=ch;
-	return ch;
-	}	    //**************************
-	if (X>=160 && X<=210 && Y>=350 && Y<=370) // Condition For rad
+		if (X>=390 && X<=420 && Y>=230 && Y<=250) // Condition For 5
 		{
-	hide_mouse();
-	button_3d(100,350,150,370,UNCLICKED,"deg",0);
-	button_3d(160,350,210,370,CLICKED,"rad",15);
-	button_3d(220,350,270,370,UNCLICKED,"gra",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(160,350,210,370,UNCLICKED,"rad",15);
-	show_mouse();
-	ch='r';
-	flagp=flag;
-	flag=ch;
+		hide_mouse();
+		button_3d(390,230,420,250,CLICKED,"5",0);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(390,230,420,250,UNCLICKED,"5",0);
+		show_mouse();
+		ch='5';
+		return ch;
+		}
 
-	return ch;
-	}
-	if (X>=220 && X<=270 && Y>=350 && Y<=370) // Condition For gra
-	{
-	hide_mouse();
-	button_3d(100,350,150,370,UNCLICKED,"deg",0);
-	button_3d(160,350,210,370,UNCLICKED,"rad",0);
-	button_3d(220,350,270,370,CLICKED,"gra",15);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(220,350,270,370,UNCLICKED,"gra",15);
-	show_mouse();
-	ch='g';
-	flagp=flag;
-	flag=ch;
-	return ch;
 
-	}
-	if ((X>=480 && X<=545 &&Y>=350 &&Y <=370)||(X>=575&&X<=595&&Y>=23&&Y<=40))   //OFF
-	{
-	free(mem);
-	exit(0);
-	}
-	if (X>=108 && X<=208 && Y>=140 && Y<=160) // Condition For dec
-	{
-	hide_mouse();
-	button_3d(108,140,208,160,CLICKED,"DEC",15);
-	button_3d(218,140,318,160,UNCLICKED,"P",0);
-	button_3d(328,140,428,160,UNCLICKED,"C",0);
-	button_3d(438,140,538,160,UNCLICKED,"BIN",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(108,140,208,160,UNCLICKED,"DEC",15);
-	show_mouse();
-	ch='u';
-	bflagp=bflag;
-	bflag=ch;
-	return ch;
-	}
-	if (X>=218 && X<=318 && Y>=140 && Y<=160) // Condition For oct
-	{
-	hide_mouse();
-	button_3d(108,140,208,160,UNCLICKED,"DEC",0);
-	button_3d(218,140,318,160,CLICKED,"P",15);
-	button_3d(328,140,428,160,UNCLICKED,"C",0);
-	button_3d(438,140,538,160,UNCLICKED,"BIN",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(218,140,318,160,UNCLICKED,"OCT",15);
-	show_mouse();
-	ch='v';
-	bflagp=bflag;
-	bflag=ch;
-	return ch;
-	}
-	if (X>=328 && X<=428 && Y>=140 && Y<=160) // Condition For hex
-	{
-	hide_mouse();
-	button_3d(108,140,208,160,UNCLICKED,"DEC",0);
-	button_3d(218,140,318,160,UNCLICKED,"OCT",0);
-	button_3d(328,140,428,160,CLICKED,"HEX",15);
-	button_3d(438,140,538,160,UNCLICKED,"BIN",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(328,140,428,160,UNCLICKED,"HEX",15);
-	show_mouse();
-	ch='w';
-	bflagp=bflag;
-	bflag=ch;
-	return ch;
-       }
-       if (X>=438 && X<=538 && Y>=140 && Y<=160) // Condition For dec
-	{
-	hide_mouse();
-	button_3d(108,140,208,160,UNCLICKED,"DEC",0);
-	button_3d(218,140,318,160,UNCLICKED,"OCT",0);
-	button_3d(328,140,428,160,UNCLICKED,"HEX",0);
-	button_3d(438,140,538,160,CLICKED,"BIN",15);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(438,140,538,160,UNCLICKED,"BIN",15);
-	show_mouse();
-	ch='x';
-	bflagp=bflag;
-	bflag=ch;
-	return ch;
-	}
-	if(X>=480&&X<=510&&Y>=280&&Y<=300)
-	{
-	hide_mouse();
-	button_3d(480,280,510,300,CLICKED,"sqrt",0);
-	show_mouse();
-	delay(250);
-	hide_mouse();
-	button_3d(480,280,510,300,UNCLICKED,"sqrt",0);
-	show_mouse();
-	ch='q';
-	return ch;
-	}
+		//***********************************
 
+		if (X>=430 && X<=460 && Y>=230 && Y<=250) // Condition For 6
+		{
+		hide_mouse();
+		button_3d(430,230,460,250,CLICKED,"6",0);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(430,230,460,250,UNCLICKED,"6",0);
+		show_mouse();
+		ch='6';
+		return ch;
+		}
+
+		//***********************************
+
+		if (X>=480 && X<=510 && Y>=230 && Y<=250) // Condition For *
+		{
+		hide_mouse();
+		button_3d(480,230,510,250,CLICKED,"*",0);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(480,230,510,250,UNCLICKED,"*",0);
+		show_mouse();
+		ch='*';
+		return ch;
+		}
+		   //***********************************
+
+		if (X>=515 && X<=545 && Y>=230 && Y<=250) // Condition For /
+		{
+		hide_mouse();
+		button_3d(515,230,545,250,CLICKED,"/",0);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(515,230,545,250,UNCLICKED,"/",0);
+		show_mouse();
+		ch='/';
+		return ch;
+		}
+
+		//***********************************
+		int  a,b;
+		if (X>=350 && X<=380 && Y>=255 && Y<=275) // Condition For 1
+		{
+		hide_mouse();
+		button_3d(350,255,380,275,CLICKED,"1",0);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(350,255,380,275,UNCLICKED,"1",0);
+		show_mouse();
+		ch='1';
+		return ch;
+		}
+
+		   // *************************************
+
+		if (X>=390 && X<=420 && Y>=255 && Y<=275) // Condition For 2
+		{
+		hide_mouse();
+		button_3d(390,255,420,275,CLICKED,"2",0);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(390,255,420,275,UNCLICKED,"2",0);
+		show_mouse();
+		ch='2';
+		return ch;
+		}
+
+		   // *************************************
+
+		if (X>=430 && X<=460 && Y>=255 && Y<=275) // Condition For 3
+		{
+		hide_mouse();
+		button_3d(430,255,460,275,CLICKED,"3",0);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(430,255,460,275,UNCLICKED,"3",0);
+		show_mouse();
+		ch='3';
+		return ch;
+		}
+		   // *************************************
+
+		if (X>=350 && X<=380 && Y>=280 && Y<=300) // Condition For 0
+		{
+		hide_mouse();
+		button_3d(350,280,380,300,CLICKED,"0",0);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(350,280,380,300,UNCLICKED,"0",0);
+		show_mouse();
+		ch='0';
+		return ch;
+		}
+		   // *************************************
+
+		if (X>=390 && X<=420 && Y>=280 && Y<=300) // Condition For .
+		{
+		hide_mouse();
+		button_3d(390,280,420,300,CLICKED,".",0);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(390,280,420,300,UNCLICKED,".",0);
+		show_mouse();
+		ch='.';
+		return ch;
+		}
+		//**********************************************
+
+		if (X>=430 && X<=460 && Y>=280 && Y<=300) // Condition For pi
+		{
+		hide_mouse();
+		button_3d(430,280,460,300,CLICKED,"pi",0);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(430,280,460,300,UNCLICKED,"pi",0);
+		show_mouse();
+		ch='h';
+		return ch;
+		}
+		 //***********************************************
+
+		if (X>=480 && X<=510 && Y>=255 && Y<=275) // Condition For -
+		{
+		hide_mouse();
+		button_3d(480,255,510,275,CLICKED,"-",0);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(480,255,510,275,UNCLICKED,"-",0);
+		show_mouse();
+		ch='-';
+		return ch;
+		}
+		//**************************************************
+
+		if (X>=515 && X<=545 && Y>=255 && Y<=275) // Condition For +
+		{
+		hide_mouse();
+		button_3d(515,255,545,275,CLICKED,"+",0);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(515,255,545,275,UNCLICKED,"+",0);
+		show_mouse();
+		ch='+';
+		return ch;
+		}
+		//*****************************************************
+
+		if (X>=350 && X<=460 && Y>=305 && Y<=325) // Condition For =
+		{
+		hide_mouse();
+		button_3d(350,305,460,325,CLICKED,"=",0);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(350,305,460,325,UNCLICKED,"=",0);
+		show_mouse();
+		ch='=';
+		return ch;
+		}
+		//*****************************************************
+
+		if (X>=480 && X<=545 && Y>=305 && Y<=325) // Condition For shift
+		{
+		hide_mouse();
+		button_3d(480,305,545,325,CLICKED,"shift",BLUE);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(480,305,545,325,UNCLICKED,"shift",BLUE);
+		show_mouse();
+		ch='~';
+		sflag=1;
+		return ch;
+		}
+		//*************************************
+
+		if (X>=480 && X<=510 && Y>=205 && Y<=225) // Condition For AC
+		{
+		hide_mouse();
+		button_3d(480,205,510,225,CLICKED,"AC",4);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(480,205,510,225,UNCLICKED,"AC",4);
+		show_mouse();
+		ch='o';
+		return ch;
+		}
+		//*********************//
+
+		if (X>=515 && X<=545 && Y>=205 && Y<=225) // Condition For C
+		{
+		hide_mouse();
+		button_3d(515,205,545,225,CLICKED,"CE",4);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(515,205,545,225,UNCLICKED,"CE",4);
+		show_mouse();
+		ch='a';
+		return ch;
+		}
+		  // ****************************************
+
+		  if (X>=100 && X<=150 && Y>=205 && Y<=230) // Condition For Sin
+		{
+		hide_mouse();
+		button_3d(100,205,150,230,CLICKED,"Sin",0);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(100,205,150,230,UNCLICKED,"Sin",0);
+		show_mouse();
+		ch='s';
+		return ch;
+		}
+		//***********************************
+
+		if (X>=160 && X<=210 && Y>=205 && Y<=230) // Condition For Cos
+		{
+		hide_mouse();
+		button_3d(160,205,210,230,CLICKED,"Cos",0);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(160,205,210,230,UNCLICKED,"Cos",0);
+		show_mouse();
+		ch='c';
+		return ch;
+		}
+		 //***********************************
+
+		 if(X>=515&&X<=545&&Y>=280&&Y<=300)     //inverse
+		 {
+		hide_mouse();
+		button_3d(515,280,545,300,CLICKED,"inv",0);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(515,280,545,300,UNCLICKED,"inv",0);
+		show_mouse();
+		ch='m';
+		return ch;
+		}
+
+		if (X>=220 && X<=270 && Y>=205 && Y<=230) // Condition For Tan
+		{
+		hide_mouse();
+		button_3d(220,205,270,230,CLICKED,"Tan",0);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(220,205,270,230,UNCLICKED,"Tan",0);
+		show_mouse();
+		ch='t';
+		return ch;
+		}
+		//***********************************  */
+
+		if (X>=100 && X<=150 && Y>=250 && Y<=275) // Condition For sin^-1
+		{
+		hide_mouse();
+		button_3d(100,250,150,275,CLICKED,"sin^-1",0);
+		show_mouse();
+		delay(150);
+		hide_mouse();
+		button_3d(100,250,150,275,UNCLICKED,"sin^-1",0);
+		show_mouse();
+		ch='i';
+		return ch;
+		}
+		//**************************
+
+			if (X>=160 && X<=210 && Y>=250 && Y<=275) // Condition For cos^-1
+		{
+		hide_mouse();
+		button_3d(160,250,210,275,CLICKED,"cos^-1",0);
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(160,250,210,275,UNCLICKED,"cos^-1",0);
+		show_mouse();
+		ch='j';
+		return ch;
+		}
+		//**************************
+
+		if (X>=430 && X<=460 && Y>=350 && Y<=370) // Condition For MR
+		{
+			hide_mouse();
+			button_3d(430,350,460,370,CLICKED,"MR",0);
+			show_mouse();
+			delay(250);
+			hide_mouse();
+			button_3d(430,350,460,370,UNCLICKED,"MR",0);
+			show_mouse();
+			ch='?';
+			return ch;
+		}
+
+		if (X>=390 && X<=420 && Y>=350 && Y<=370) // Condition For M-
+		{
+			hide_mouse();
+			button_3d(390,350,420,370,CLICKED,"M-",0);
+			show_mouse();
+			delay(250);
+			hide_mouse();
+			button_3d(390,350,420,370,UNCLICKED,"M-",0);
+			show_mouse();
+			ch='<';
+			return ch;
+		}
+
+		if (X>=350 && X<=380 && Y>=350 && Y<=370) // Condition For M+
+		{
+			hide_mouse();
+			button_3d(350,350,380,370,CLICKED,"M+",0);
+			show_mouse();
+			delay(250);
+			hide_mouse();
+			button_3d(350,350,380,370,UNCLICKED,"M+",0);
+			show_mouse();
+			ch='>';
+			return ch;
+		}
+
+		if (X>=220 && X<=270 && Y>=250 && Y<=275) // Condition For tan^-1
+		{
+			hide_mouse();
+			button_3d(220,250,270,275,CLICKED,"tan^-1",0);
+			show_mouse();
+			delay(250);
+			hide_mouse();
+			button_3d(220,250,270,275,UNCLICKED,"tan^-1",0);
+			show_mouse();
+			ch='k';
+			return ch;
+		}
+		//**************************
+
+		if (X>=100 && X<=150 && Y>=300 && Y<=325) // Condition For ln
+		{
+			hide_mouse();
+			button_3d(100,300,150,325,CLICKED,"ln",0);
+			show_mouse();
+			delay(250);
+			hide_mouse();
+			button_3d(100,300,150,325,UNCLICKED,"ln",0);
+			show_mouse();
+			ch='n';
+			return ch;
+		}
+			//**************************
+
+		if (X>=160 && X<=210 && Y>=300 && Y<=325) // Condition For log
+		{
+			hide_mouse();
+			button_3d(160,300,210,325,CLICKED,"log",0);
+			show_mouse();
+			delay(150);
+			hide_mouse();
+			button_3d(160,300,210,325,UNCLICKED,"log",0);
+			show_mouse();
+			ch='l';
+			return ch;
+		}
+			//**************************
+
+			if (X>=220 && X<=270 && Y>=300 && Y<=325) // Condition For X^2
+		{
+			hide_mouse();
+			button_3d(220,300,270,325,CLICKED,"x^2",0);
+			show_mouse();
+			delay(250);
+			hide_mouse();
+			button_3d(220,300,270,325,UNCLICKED,"x^2",0);
+			show_mouse();
+			ch='p';
+			return ch;
+		}
+
+		if (X>=100 && X<=150 && Y>=350 && Y<=370) // Condition For deg
+		{
+			hide_mouse();
+			button_3d(100,350,150,370,CLICKED,"deg",15);
+			button_3d(160,350,210,370,UNCLICKED,"rad",0);
+			button_3d(220,350,270,370,UNCLICKED,"gra",0);
+			show_mouse();
+			delay(250);
+			hide_mouse();
+			button_3d(100,350,150,370,UNCLICKED,"deg",15);
+			show_mouse();
+			ch='d';
+			flagp=flag;
+			flag=ch;
+			return ch;
+		}
+		//**************************
+
+		if (X>=160 && X<=210 && Y>=350 && Y<=370) // Condition For rad
+		{
+			hide_mouse();
+			button_3d(100,350,150,370,UNCLICKED,"deg",0);
+			button_3d(160,350,210,370,CLICKED,"rad",15);
+			button_3d(220,350,270,370,UNCLICKED,"gra",0);
+			show_mouse();
+			delay(250);
+			hide_mouse();
+			button_3d(160,350,210,370,UNCLICKED,"rad",15);
+			show_mouse();
+			ch='r';
+			flagp=flag;
+			flag=ch;
+			return ch;
+		}
+
+		if (X>=220 && X<=270 && Y>=350 && Y<=370) // Condition For gra
+		{
+			hide_mouse();
+			button_3d(100,350,150,370,UNCLICKED,"deg",0);
+			button_3d(160,350,210,370,UNCLICKED,"rad",0);
+			button_3d(220,350,270,370,CLICKED,"gra",15);
+			show_mouse();
+			delay(250);
+			hide_mouse();
+			button_3d(220,350,270,370,UNCLICKED,"gra",15);
+			show_mouse();
+			ch='g';
+			flagp=flag;
+			flag=ch;
+			return ch;
+		}
+
+		if ((X>=480 && X<=545 &&Y>=350 &&Y <=370)||(X>=575&&X<=595&&Y>=23&&Y<=40))   //OFF
+		{
+			free(mem);
+			exit(0);
+		}
+
+		if (X>=108 && X<=208 && Y>=140 && Y<=160) // Condition For dec
+		{
+			hide_mouse();
+			button_3d(108,140,208,160,CLICKED,"DEC",15);
+			button_3d(218,140,318,160,UNCLICKED,"OCT",0);
+			button_3d(328,140,428,160,UNCLICKED,"HEX",0);
+			button_3d(438,140,538,160,UNCLICKED,"BIN",0);
+			show_mouse();
+			delay(250);
+			hide_mouse();
+			button_3d(108,140,208,160,UNCLICKED,"DEC",15);
+			show_mouse();
+			ch='u';
+			bflagp=bflag;
+			bflag=ch;
+			return ch;
+		}
+
+		if (X>=218 && X<=318 && Y>=140 && Y<=160) // Condition For oct
+		{
+			hide_mouse();
+			button_3d(108,140,208,160,UNCLICKED,"DEC",0);
+			button_3d(218,140,318,160,CLICKED,"OCT",15);
+			button_3d(328,140,428,160,UNCLICKED,"HEX",0);
+			button_3d(438,140,538,160,UNCLICKED,"BIN",0);
+			show_mouse();
+			delay(250);
+			hide_mouse();
+			button_3d(218,140,318,160,UNCLICKED,"OCT",15);
+			show_mouse();
+			ch='v';
+			bflagp=bflag;
+			bflag=ch;
+			return ch;
+		}
+
+		if (X>=328 && X<=428 && Y>=140 && Y<=160) // Condition For hex
+		{
+			hide_mouse();
+			button_3d(108,140,208,160,UNCLICKED,"DEC",0);
+			button_3d(218,140,318,160,UNCLICKED,"OCT",0);
+			button_3d(328,140,428,160,CLICKED,"HEX",15);
+			button_3d(438,140,538,160,UNCLICKED,"BIN",0);
+			show_mouse();
+			delay(250);
+			hide_mouse();
+			button_3d(328,140,428,160,UNCLICKED,"HEX",15);
+			show_mouse();
+			ch='w';
+			bflagp=bflag;
+			bflag=ch;
+			return ch;
+		}
+
+		if (X>=438 && X<=538 && Y>=140 && Y<=160) // Condition For dec
+		{
+			hide_mouse();
+			button_3d(108,140,208,160,UNCLICKED,"DEC",0);
+			button_3d(218,140,318,160,UNCLICKED,"OCT",0);
+			button_3d(328,140,428,160,UNCLICKED,"HEX",0);
+			button_3d(438,140,538,160,CLICKED,"BIN",15);
+			show_mouse();
+			delay(250);
+			hide_mouse();
+			button_3d(438,140,538,160,UNCLICKED,"BIN",15);
+			show_mouse();
+			ch='x';
+			bflagp=bflag;
+			bflag=ch;
+			return ch;
+		}
+
+		if(X>=480&&X<=510&&Y>=280&&Y<=300) //sqrt
+		{
+			hide_mouse();
+			button_3d(480,280,510,300,CLICKED,"sqrt",0);
+			show_mouse();
+			delay(250);
+			hide_mouse();
+			button_3d(480,280,510,300,UNCLICKED,"sqrt",0);
+			show_mouse();
+			ch='q';
+			return ch;
+		}
 	}while(kbhit() == 0);
 	ch=getch();
 	return ch;
-	}
+}
 
 /*************************************************************************/
 /*		This function performs the Calculations			 */
@@ -1638,19 +1622,19 @@ else if(flagp=='g')
  if(pnt1!=0)
  {
   gotoxy(row,col);
-  printf("The trial version does not support this feature");
+  printf("Not supported");
   getch();
   bflag='u';
   bflagp='0';
-   main();
+  main();
  }
  if(bflagp!='u')
  {
   gotoxy(row,col);
-  printf("The trial version does not support this feature ");
+  printf("Not supported");
   getch();
- bflagp='0';
- bflag='u';
+  bflagp='0';
+  bflag='u';
   main();
  }
  switch(bflag)
