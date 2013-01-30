@@ -376,11 +376,12 @@ void	structure()
 	button_3d(100,205,150,230,UNCLICKED,"sin",0);	  // Box OfSin Function
 	button_3d(160,205,210,230,UNCLICKED,"cos",0);     // Box Of CosFunction
 	button_3d(220,205,270,230,UNCLICKED,"tan",0);	  // Box Of Tan Function
-
+	button_3d(280,205,330,230,UNCLICKED,"P",0);	  // Box Of Permutation Function
 
 	button_3d(100,250,150,275,UNCLICKED,"sin^-1",0);    // Box Of sin^-1
 	button_3d(160,250,210,275,UNCLICKED,"cos^-1",0);    // Box Of cos^-1
 	button_3d(220,250,270,275,UNCLICKED,"tan^-1",0);    // Box Of tan^-1
+	button_3d(280,250,330,275,UNCLICKED,"C",0);    // Box Of Combination
 
 	button_3d(100,300,150,325,UNCLICKED,"ln",0);    // Box Of ln
 	settextjustify(CENTER_TEXT,CENTER_TEXT);
