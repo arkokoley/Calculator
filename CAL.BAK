@@ -23,8 +23,8 @@ int midx,midy;
 # define PI 3.14159
 
 unsigned long factorial(int n);
-//unsigned long permutation(int);
-//unsigned long combination(int);
+unsigned long permutation(int);
+unsigned long combination(int);
 
 char str1[]={"Gaurav Koley, Manoj Soni & Aman Sharma"};
 
@@ -379,12 +379,12 @@ void	structure()
 	button_3d(100,205,150,230,UNCLICKED,"sin",0);	  // Box OfSin Function
 	button_3d(160,205,210,230,UNCLICKED,"cos",0);     // Box Of CosFunction
 	button_3d(220,205,270,230,UNCLICKED,"tan",0);	  // Box Of Tan Function
-	button_3d(280,205,330,230,UNCLICKED,"fact",0);	  // Box Of Factorial Function
+	button_3d(280,205,330,230,UNCLICKED,"P",0);	  // Box Of Permutation Function
 
 	button_3d(100,250,150,275,UNCLICKED,"sin^-1",0);    // Box Of sin^-1
 	button_3d(160,250,210,275,UNCLICKED,"cos^-1",0);    // Box Of cos^-1
 	button_3d(220,250,270,275,UNCLICKED,"tan^-1",0);    // Box Of tan^-1
-//	button_3d(280,250,330,275,UNCLICKED,"C",0);    // Box Of Combination
+	button_3d(280,250,330,275,UNCLICKED,"C",0);    // Box Of Combination
 
 	button_3d(100,300,150,325,UNCLICKED,"ln",0);    // Box Of ln
 	settextjustify(CENTER_TEXT,CENTER_TEXT);
@@ -395,6 +395,7 @@ void	structure()
 	outtextxy(245,290,"x^3");
 	button_3d(160,300,210,325,UNCLICKED,"log",0);    // Box Of log
 	button_3d(220,300,270,325,UNCLICKED,"x^2",0);    // Box Of x^2
+	button_3d(280,300,330,325,UNCLICKED,"!",0);    // Box Of Factorial
 
 	button_3d(100,350,150,370,UNCLICKED,"deg",15);
 	button_3d(160,350,210,370,UNCLICKED,"rad",0);
@@ -906,6 +907,19 @@ if(ch=='d'||ch=='r'||ch=='g')
 			y=z;
 		}
 	}
+		if(ch1=='P'||ch1=='C')
+		{
+			if(ch=='P')
+				y=permutation(y);
+			else if(ch=='C')
+				y=combination(y);
+			else
+			{
+				ch2=ch;
+				r=y;
+				y=z;
+			}
+		}
 	gotoxy(row,col);
 	cout<<"\t\t\t\t    ";
 	gotoxy(row,col);
@@ -1573,14 +1587,42 @@ char input()
 			return ch;
 		}
 		
-		if (X>=280 && X<=330 && Y>=205 && Y<=230) // Condition For Factorial
+		if (X>=280 && X<=330 && Y>=205 && Y<=230) // Condition For Permutation
 		{
 		hide_mouse();
-		button_3d(280,205,330,230,CLICKED,"fact",0);
+		button_3d(280,205,330,230,CLICKED,"P",0);
 		show_mouse();
 		delay(250);
 		hide_mouse();
-		button_3d(280,205,330,230,UNCLICKED,"fact",0);
+		button_3d(280,205,330,230,UNCLICKED,"P",0);
+		show_mouse();
+		ch='P';
+		return ch;
+		}
+		//***********************************
+
+		if (X>=280 && X<=330 && Y>=250 && Y<=275) // Condition For Combination
+		{
+		hide_mouse();
+		button_3d(280,250,330,275,CLICKED,"C",0);    // Box Of Combination
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(280,250,330,275,UNCLICKED,"C",0);    // Box Of Combination
+		show_mouse();
+		ch='C';
+		return ch;
+		}
+		//***********************************
+
+		if (X>=280 && X<=330 && Y>=300 && Y<=325) // Condition For Combination
+		{
+		hide_mouse();
+		button_3d(280,300,330,325,CLICKED,"!",0);    // Box Of Factorial
+		show_mouse();
+		delay(250);
+		hide_mouse();
+		button_3d(280,300,330,325,UNCLICKED,"!",0);    // Box Of Factorial
 		show_mouse();
 		ch='!';
 		return ch;
@@ -1695,4 +1737,20 @@ unsigned long factorial(int n)
         fact = fact*i;
     }
     return fact;
+}
+
+unsigned long permutation(int n)
+{
+    unsigned long per;
+	int r=input();
+    per = factorial(n)/(factorial(n-r));
+    return per;
+}
+
+unsigned long combination(int n)
+{
+    unsigned long comb; //local variable
+	int r=input();
+    comb = factorial(n)/(factorial(n-r)*factorial(r));
+    return comb; //return statement
 }
